@@ -1,32 +1,52 @@
-
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
     color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
+/* Centrer le contenu principal */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+/* Titre principal */
 h1 {
     text-align: center;
     color: limegreen;
     margin-top: 20px;
+    font-size: 2em;
 }
 
+/* Titres de sections */
 h2 {
     color: #FF4500;
+    text-align: center;
+    margin: 10px 0;
 }
 
-/* New Game Section */
+/* Suppression des encadrés autour des sections */
 #new-game, #game-section, #leader-board {
-    margin: 20px auto;
-    width: 80%;
-    max-width: 600px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    padding: 20px 0;
+    box-shadow: none;
+    margin: 10px 0;
 }
 
+/* Style des inputs et boutons */
 input, button {
     width: 100%;
     padding: 10px;
@@ -41,19 +61,20 @@ button:hover {
     cursor: pointer;
 }
 
-/* Leaderboard Table */
+/* Table de classement */
 table {
     width: 100%;
     border-collapse: collapse;
-    table-layout: fixed;
+    margin-top: 10px;
 }
 
 th, td {
     padding: 12px;
-    text-align: left;
+    text-align: center;
     border-bottom: 1px solid #ddd;
 }
 
+/* Couleurs pour le classement */
 .rank-1 {
     background-color: #6B8E23;
     color: white;
@@ -78,14 +99,5 @@ th, td {
     th, td {
         padding: 10px;
         font-size: 14px;
-        text-align: center;
-    }
-
-    th {
-        font-weight: bold;
-    }
-
-    td {
-        border-bottom: 1px solid #ccc;
     }
 }
