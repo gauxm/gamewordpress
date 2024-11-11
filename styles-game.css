@@ -21,14 +21,6 @@ main {
     padding: 20px;
 }
 
-/* Titre principal */
-h1 {
-    text-align: center;
-    color: limegreen;
-    margin-top: 20px;
-    font-size: 2em;
-}
-
 /* Titres de sections */
 h2 {
     color: #FF4500;
